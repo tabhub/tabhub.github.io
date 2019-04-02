@@ -6,7 +6,7 @@ Search `tabhub` in Google WebStore or just click [here](https://chrome.google.co
 
 ### Getting Started Guide
 
-`A picture is worth a thousand words` ;)
+They say "A picture is worth a thousand words" ;)
 
 ![alt text](https://raw.githubusercontent.com/tabhub/cards/master/help/guide/images/welcome.png "TabHub Usage")
 
