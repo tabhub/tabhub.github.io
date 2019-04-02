@@ -2,7 +2,7 @@
 
 ### Installation
 
-Search `tabhub` in Google WebStore or just click: https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb
+Search `tabhub` in Google WebStore or just click [here](https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb).
 
 ### Getting Started Guide
 
