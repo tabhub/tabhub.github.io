@@ -1,7 +1,3 @@
-<p align="center">
-<img src="https://avatars1.githubusercontent.com/u/49182113?s=400&u=aac61a2f2d76615d1a2bb9bea5757170e5d342c1&v=4" width="200px">
-</p>
-
 ## Welcome to TabHub
 
 ### Installation
