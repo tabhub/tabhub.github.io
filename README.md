@@ -13,9 +13,14 @@ They say "A picture is worth a thousand words" ;)
 
 ### Resources
 
-Our official [resources](https://github.com/tabhub/cards)
+* Our official [resources](https://github.com/tabhub/cards)
+* [Rss Feeds](https://github.com/tabhub/rss-feeds) created/collected By TabHub
 
 #### The Third Party Resources
 
- Null at present :)
+* [Subtitle cards example](https://github.com/MeiJuMi/subtitle-cards)
+
+### Tools
+
+* [**TabHub Card Action**](https://github.com/tabhub/tabhub-card-action) A GitHub Action for creating your own TabHub cards of image type
 
