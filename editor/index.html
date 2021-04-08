@@ -219,13 +219,6 @@
       var json = jsoneditor.getValue()
       outputTextarea.value = JSON.stringify(json, null, 2)
 
-      // validate
-      // var validationErrors = jsoneditor.validate()
-      // if (validationErrors.length) {
-      //   validateTextarea.innerHTML = '❌ Not valid'
-      // } else {
-      //   validateTextarea.innerHTML = '✅ Valid'
-      // }
     })
     updateDirectLink()
   }
@@ -242,8 +235,15 @@
   /* -------------------------------------------------------- event listeners */
 
   copyJSON.addEventListener('click', function () {
-    outputTextarea.select()
-    document.execCommand("copy")
+    // validate
+    var validationErrors = jsoneditor.validate()
+    if (validationErrors.length) {
+      alert("Error! Please check the fields and copy again!")
+    } else {
+      outputTextarea.select()
+      document.execCommand("copy")
+      alert("Copy success!")
+    }
   })
 
   parseUrl()
