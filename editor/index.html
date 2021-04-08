@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>TabHub Card Resource Editor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+    <link rel='stylesheet' id='theme-link'>
+    <link rel='stylesheet' id='iconlib-link'>
+</head>
+<body>
+<div class='container grid-xl'>
+    <div class="row columns md:flex">
+        <div class='col-8 col-md-8 w-8/12'>
+            <h1></h1>
+            <div id="json-editor-form"></div>
+        </div>
+        <div class='col-4 col-md-4 w-4/12'>
+            <h1></h1>
+            <div>
+                <a class="btn btn-primary" id="direct-link" title="preserves schema, value, and options">Share to edit</a>
+                <a class="btn btn-secondary" href="?" title="reload editor with default example settings">reset</a>
+            </div>
+            <h1></h1>
+            <h2>JSON Output</h2>
+            <p>Click the "Copy" button below to copy the resource to your clipboard.</p>
+            <label for="output-textarea"></label>
+            <button class='btn btn-primary btn-block' id='copy-value'>Copy</button>
+            <textarea id='output-textarea' rows="15" style="width: 100%; font-family: monospace;"
+                      class='form-control'></textarea>
+            <h2 id='validation'></h2>
+        </div>
+    </div>
+</div>
+<script>
+
+  var defaultSchema = {
+    "title": "TabHub Card Resource Form",
+    "type": "object",
+    "required": [
+      "name",
+      "version",
+      "type",
+      "items"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Give a name for this resource",
+        "minLength": 4
+      },
+      "version": {
+        "type": "string",
+        "enum": [
+          "1.0"
+        ]
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "resource"
+        ]
+      },
+      "items": {
+        "type": "array",
+        "format": "table",
+        "title": "Resource items",
+        "description": "Click [+ Resource] to add a resource",
+        "items": {
+          "type": "object",
+          "title": "Resource",
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "image",
+                "rss",
+                "tabhub-app"
+              ],
+              "default": "image"
+            },
+            "name": {
+              "type": "string"
+            },
+            "background_style":{
+              "type": "string",
+              "format": "color",
+              "title": "Page Backgroud Color",
+              "default": "#279C74"
+            },
+            "url": {
+              "type": "string",
+              "title": "Resource url"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // parse url -> merge options -> refreshUI() -> initJsoneditor() -> direct link
+
+  /* ------------------------------------------------------------------- data */
+
+  var data = {}
+
+  var defaultOptions = {
+    iconlib: 'fontawesome5',
+    object_layout: 'normal',
+    schema: defaultSchema,
+    show_errors: 'always',
+    theme: 'spectre',
+    disable_edit_json: true,
+    disable_properties: true,
+    enable_array_copy: true,
+    disable_collapse: true,
+    prompt_before_delete: false
+  }
+
+  var jsoneditor = null
+  var directLink = document.querySelector('#direct-link')
+
+  var head = document.getElementsByTagName('head')[0]
+  var iconlibLink = document.querySelector('#iconlib-link')
+  var jsonEditorForm = document.querySelector('#json-editor-form')
+  var outputTextarea = document.querySelector('#output-textarea')
+  var copyJSON = document.querySelector('#copy-value')
+  var themeLink = document.querySelector('#theme-link')
+  var validateTextarea = document.querySelector('#validation')
+
+  /* -------------------------------------------------------------- parse url */
+
+  var parseUrl = function () {
+    var url = window.location.search
+    var queryParamsString = url.substring(1, url.length)
+    var queryParams = queryParamsString.split('&')
+
+    if (queryParamsString.length) {
+      queryParams.forEach(function (queryParam) {
+        var splittedParam = queryParam.split('=')
+        var param = splittedParam[0]
+        var value = splittedParam[1]
+
+        // data query param
+        if (param === 'data') {
+          // compress schema and value
+          try {
+            data = JSON.parse(LZString.decompressFromBase64(value))
+          } catch (reason) {
+          }
+        }
+      })
+    }
+
+    mergeOptions()
+  }
+
+  /* ----------------------------------------------------------- mergeOptions */
+
+  var mergeOptions = function () {
+    data.options = Object.assign(defaultOptions, data.options)
+    refreshUI()
+  }
+
+  /* -------------------------------------------------------------- refreshUI */
+
+  var refreshUI = function () {
+    // theme
+    var themeMap = {
+      barebones: '',
+      bootstrap3: 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css',
+      bootstrap4: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
+      html: '',
+      spectre: 'https://unpkg.com/spectre.css/dist/spectre.min.css',
+      tailwind: 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
+    }
+    themeLink.href = themeMap[data.options.theme]
+
+    // iconlLib
+    var iconLibMap = {
+      fontawesome3: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css',
+      fontawesome4: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css',
+      fontawesome5: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
+      jqueryui: 'https://code.jquery.com/ui/1.10.3/themes/south-street/jquery-ui.css',
+      openiconic: 'https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css',
+      spectre: 'https://unpkg.com/spectre.css/dist/spectre-icons.min.css'
+    }
+    iconlibLink.href = iconLibMap[data.options.iconlib]
+
+    initJsoneditor()
+  }
+
+  /* --------------------------------------------------------- initJsoneditor */
+
+  var initJsoneditor = function () {
+    // destroy old JSONEditor instance if exists
+    if (jsoneditor) {
+      jsoneditor.destroy()
+    }
+
+    // new instance of JSONEditor
+    jsoneditor = new window.JSONEditor(jsonEditorForm, data.options)
+
+    // listen for changes
+    jsoneditor.on('change', function () {
+      // output
+      var json = jsoneditor.getValue()
+      outputTextarea.value = JSON.stringify(json, null, 2)
+
+      // validate
+      // var validationErrors = jsoneditor.validate()
+      // if (validationErrors.length) {
+      //   validateTextarea.innerHTML = '❌ Not valid'
+      // } else {
+      //   validateTextarea.innerHTML = '✅ Valid'
+      // }
+    })
+    updateDirectLink()
+  }
+
+  /* ------------------------------------------------------- updateDirectLink */
+
+  var updateDirectLink = function () {
+    var url = window.location.href.replace(/\?.*/, '')
+    url += '?data='
+    url += LZString.compressToBase64(JSON.stringify(data))
+    directLink.href = url
+  }
+
+  /* -------------------------------------------------------- event listeners */
+
+  copyJSON.addEventListener('click', function () {
+    outputTextarea.select()
+    document.execCommand("copy")
+  })
+
+  parseUrl()
+
+</script>
+</body>
+</html>
