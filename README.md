@@ -2,7 +2,10 @@
 
 ### Installation
 
-Search `tabhub` in Google WebStore or just click [here](https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb).
+Search `tabhub` in [Google WebStore](https://chrome.google.com/webstore/category/extensions) or [Microsoft Edge add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). Or just visit by your browser:
+
+* [Chrome](https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb)
+* [Edge](https://microsoftedge.microsoft.com/addons/detail/tabhub/lfdmjefnjlbniodnbgjmadjdjgcofdef)
 
 ### Getting Started Guide
 
