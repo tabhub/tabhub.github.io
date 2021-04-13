@@ -1,5 +1,7 @@
 ## Welcome to TabHub
 
+[简体中文](https://tabhub.io/README_zh.html)
+
 ### Installation
 
 Search `tabhub` in [Google WebStore](https://chrome.google.com/webstore/category/extensions) or [Microsoft Edge add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). Or just visit by your browser:
@@ -22,6 +24,7 @@ They say "A picture is worth a thousand words" ;)
 #### The Third Party Resources
 
 * [Subtitle cards example](https://github.com/MeiJuMi/subtitle-cards)
+* [Git cheatsheet card](https://github.com/gitx-io/git-cheatsheet-card)
 
 ### Tools
 
