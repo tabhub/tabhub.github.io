@@ -1,6 +1,6 @@
 ## Welcome to TabHub
 
-[简体中文](https://tabhub.io/README_zh.html)
+English | [简体中文](https://tabhub.io/README_zh.html)
 
 ### Installation
 
@@ -13,13 +13,13 @@ Search `tabhub` in [Google WebStore](https://chrome.google.com/webstore/category
 
 They say "A picture is worth a thousand words" ;)
 
-![alt text](https://raw.githubusercontent.com/tabhub/cards/master/help/guide/images/welcome.png "TabHub Usage")
+![alt text](https://raw.githubusercontent.com/tabhub/cards/master/help/guide/images/tabhub_help_en.png "TabHub Usage")
 
 
 ### Resources
 
 * Our official [resources](https://github.com/tabhub/cards)
-* [Rss Feeds](https://github.com/tabhub/rss-feeds) created/collected By TabHub
+* [RSS Feeds](https://github.com/tabhub/rss-feeds) created/collected By TabHub
 
 #### The Third Party Resources
 
