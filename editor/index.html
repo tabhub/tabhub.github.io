@@ -5,8 +5,8 @@
     <title>TabHub Card Resource Editor</title>
     <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
-    <link rel='stylesheet' id='theme-link'>
-    <link rel='stylesheet' id='iconlib-link'>
+    <link rel='stylesheet' href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 <body>
 <div class='container grid-xl'>
@@ -133,7 +133,6 @@
   var directLink = document.querySelector('#direct-link')
 
   var head = document.getElementsByTagName('head')[0]
-  var iconlibLink = document.querySelector('#iconlib-link')
   var jsonEditorForm = document.querySelector('#json-editor-form')
   var outputTextarea = document.querySelector('#output-textarea')
   var copyJSON = document.querySelector('#copy-value')
@@ -163,7 +162,6 @@
         }
       })
     }
-
     mergeOptions()
   }
 
@@ -171,34 +169,6 @@
 
   var mergeOptions = function () {
     data.options = Object.assign(defaultOptions, data.options)
-    refreshUI()
-  }
-
-  /* -------------------------------------------------------------- refreshUI */
-
-  var refreshUI = function () {
-    // theme
-    var themeMap = {
-      barebones: '',
-      bootstrap3: 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css',
-      bootstrap4: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-      html: '',
-      spectre: 'https://unpkg.com/spectre.css/dist/spectre.min.css',
-      tailwind: 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
-    }
-    themeLink.href = themeMap[data.options.theme]
-
-    // iconlLib
-    var iconLibMap = {
-      fontawesome3: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css',
-      fontawesome4: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css',
-      fontawesome5: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
-      jqueryui: 'https://code.jquery.com/ui/1.10.3/themes/south-street/jquery-ui.css',
-      openiconic: 'https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css',
-      spectre: 'https://unpkg.com/spectre.css/dist/spectre-icons.min.css'
-    }
-    iconlibLink.href = iconLibMap[data.options.iconlib]
-
     initJsoneditor()
   }
 
