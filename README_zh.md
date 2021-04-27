@@ -20,8 +20,9 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 
 ### 卡片资源(resource)
 
-* [官方资源](https://github.com/tabhub/cards)
+* [官方资源](https://github.com/tabhub/cards) (随应用安装)
 * [官方收集/制作的 RSS Feeds](https://github.com/tabhub/rss-feeds)
+* [考级英语单词卡片](https://github.com/tabhub/English-words-cards)
 
 #### 第三方资源
 

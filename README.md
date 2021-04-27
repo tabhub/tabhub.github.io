@@ -18,7 +18,7 @@ They say "A picture is worth a thousand words" ;)
 
 ### Resources
 
-* Our official [resources](https://github.com/tabhub/cards)
+* Our official [resources](https://github.com/tabhub/cards) (Built in the app)
 * [RSS Feeds](https://github.com/tabhub/rss-feeds) created/collected By TabHub
 
 #### The Third Party Resources
