@@ -9,6 +9,11 @@ Search `tabhub` in [Google WebStore](https://chrome.google.com/webstore/category
 * [Chrome](https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb)
 * [Edge](https://microsoftedge.microsoft.com/addons/detail/tabhub/lfdmjefnjlbniodnbgjmadjdjgcofdef)
 
+Note: To read third party RSS in TabHub, please ensure the requirements:
+
+* TabHub v2.1
+* Chrome/Edge 94
+
 ### Getting Started Guide
 
 They say "A picture is worth a thousand words" ;)

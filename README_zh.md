@@ -11,6 +11,11 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * [Chrome 浏览器](https://chrome.google.com/webstore/detail/tabhub/eolilpdjccnmkecllnlpomoaommkcdkb)
 * [Edge 浏览器](https://microsoftedge.microsoft.com/addons/detail/tabhub/lfdmjefnjlbniodnbgjmadjdjgcofdef)
 
+提示：如果你想在 TabHub 中阅览第三方 RSS，请确保最低版本满足：
+
+* TabHub v2.1
+* Chrome/Edge 94
+
 ### 使用指南
 
 一图胜千言 ;)
