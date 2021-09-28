@@ -31,6 +31,7 @@ They say "A picture is worth a thousand words" ;)
 * [Subtitle cards example](https://github.com/MeiJuMi/subtitle-cards)
 * [Git cheatsheet card](https://github.com/gitx-io/git-cheatsheet-card)
 * [Git Commands Explained with Cats!](https://github.com/gitx-io/git-cats)
+* [An RSS Feed Collection](https://github.com/gingerhot/tabhub)
 
 ### Tools
 

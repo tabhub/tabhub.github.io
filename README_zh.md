@@ -34,6 +34,7 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * [一个美剧字幕的例子](https://github.com/MeiJuMi/subtitle-cards)
 * [Git 常用命令卡片](https://github.com/gitx-io/git-cheatsheet-card)
 * [用喵星人助学 Git 命令](https://github.com/gitx-io/git-cats)
+* [一些媒体/博客的 RSS](https://github.com/gingerhot/tabhub)
 
 ### 工具
 
