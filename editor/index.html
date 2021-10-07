@@ -18,7 +18,7 @@
         <div class='col-4 col-md-4 w-4/12'>
             <h1></h1>
             <div>
-                <a class="btn btn-primary" id="direct-link" title="preserves schema, value, and options">Share to edit</a>
+                <a class="btn btn-primary" id='setvalue' title="Use JSON data to update form">Update Form</a>
                 <a class="btn btn-secondary" href="?" title="reload editor with default example settings">reset</a>
             </div>
             <h1></h1>
@@ -110,7 +110,7 @@
     }
   }
 
-  // parse url -> merge options -> refreshUI() -> initJsoneditor() -> direct link
+  // parse url -> merge options -> refreshUI() -> initJsoneditor()
 
   /* ------------------------------------------------------------------- data */
 
@@ -130,7 +130,6 @@
   }
 
   var jsoneditor = null
-  var directLink = document.querySelector('#direct-link')
 
   var head = document.getElementsByTagName('head')[0]
   var jsonEditorForm = document.querySelector('#json-editor-form')
@@ -138,6 +137,7 @@
   var copyJSON = document.querySelector('#copy-value')
   var themeLink = document.querySelector('#theme-link')
   var validateTextarea = document.querySelector('#validation')
+  var setValue = document.querySelector('#setvalue')
 
   /* -------------------------------------------------------------- parse url */
 
@@ -190,19 +190,13 @@
       outputTextarea.value = JSON.stringify(json, null, 2)
 
     })
-    updateDirectLink()
-  }
-
-  /* ------------------------------------------------------- updateDirectLink */
-
-  var updateDirectLink = function () {
-    var url = window.location.href.replace(/\?.*/, '')
-    url += '?data='
-    url += LZString.compressToBase64(JSON.stringify(data))
-    directLink.href = url
   }
 
   /* -------------------------------------------------------- event listeners */
+
+  setValue.addEventListener('click', function () {
+    jsoneditor.setValue(JSON.parse(outputTextarea.value))
+  })
 
   copyJSON.addEventListener('click', function () {
     // validate
