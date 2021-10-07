@@ -39,3 +39,11 @@ They say "A picture is worth a thousand words" ;)
 * [TabHub Card Action](https://github.com/tabhub/tabhub-card-action) A GitHub Action for creating your own TabHub cards of image type
 
 * [TabHub Card Resource Editor](https://tabhub.io/editor/) Hope to create your own resource? Try the resource editor to create a TabHub card resource manifest manually
+
+### Contribution
+
+You are welcome to contribute:
+
+* Create an issue when you have any advice/problem [here](https://github.com/tabhub/community/issues)
+* Or create a new discussion in [TabHub Discussions](https://github.com/tabhub/community/discussions)
+* Create a new resource and share it in [TabHub Discussions](https://github.com/tabhub/community/discussions/categories/tabhub-resources)

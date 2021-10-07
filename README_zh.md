@@ -42,3 +42,12 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * [TabHub Card Action](https://github.com/tabhub/tabhub-card-action) 一个只要你提供图片就可以生成图片类型资源的 GitHub Action
 
 * [TabHub Card Resource Editor](https://tabhub.io/editor/) 如果你想手动创建资源，可以用这个表格工具来生成资源清单。然后复制粘贴到 TabHub 的菜单里的自行添加的输入框里点`添加`即可
+
+
+### 加入社区
+
+如果你在使用 TabHub 的过程中有任何问题或反馈，可以:
+
+* 通过[创建新的 Issue](https://github.com/tabhub/community/issues)反馈问题
+* 或在 [TabHub Discussions](https://github.com/tabhub/community/discussions) 相应的板块发起讨论
+* 如果你新建了有趣的 TabHub Resource，也可以在 [TabHub Discussions](https://github.com/tabhub/community/discussions/categories/tabhub-resources) 上和大家分享
