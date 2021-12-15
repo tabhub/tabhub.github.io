@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: December 05, 2021
+Last updated: December 15, 2021
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
@@ -40,7 +40,7 @@ Affiliate means an entity that controls, is controlled by or is under common con
 
 ### Types of Data Collected
 
-We don't collect any kind of your personal data at present. Our app don't need sign up and login. We don't track your use in our app.
+We don't collect any kind of your personal data at present. TabHub extension doesn't need you to sign up or login. We don't track your use in our app.
 
 ## Links to Other Websites
 
