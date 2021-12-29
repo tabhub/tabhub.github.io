@@ -33,6 +33,7 @@ They say "A picture is worth a thousand words" ;)
 * [Git Commands Explained with Cats!](https://github.com/gitx-io/git-cats)
 * [An RSS Feed Collection](https://github.com/gingerhot/tabhub)
 * [Classical Chinese poetry collections](https://github.com/tabhub/huajianji)
+* [Misbrands](https://github.com/tabhub/misbrands)
 
 ### Tools
 

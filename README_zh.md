@@ -36,6 +36,7 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * [用喵星人助学 Git 命令](https://github.com/gitx-io/git-cats)
 * [一些媒体/博客的 RSS](https://github.com/gingerhot/tabhub)
 * [非常全的古诗词集](https://github.com/tabhub/huajianji)
+* [把玩 misbrands 图标](https://github.com/tabhub/misbrands)
 
 ### 工具
 
