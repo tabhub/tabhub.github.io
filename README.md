@@ -34,6 +34,7 @@ They say "A picture is worth a thousand words" ;)
 * [An RSS Feed Collection](https://github.com/gingerhot/tabhub)
 * [Classical Chinese poetry collections](https://github.com/tabhub/huajianji)
 * [Misbrands](https://github.com/tabhub/misbrands)
+* [Mini-games](https://github.com/tabhub/mini-games)
 
 ### Tools
 
