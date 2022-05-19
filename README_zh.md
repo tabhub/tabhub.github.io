@@ -1,6 +1,6 @@
 ## 欢迎使用 TabHub
 
-[English](https://tabhub.io/) | 简体中文
+[English](https://tabhub.github.io/) | 简体中文
 
 TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在打开新的标签页时默认显示的内容。可以是你喜欢的一幅图片，或者一门语言的单词卡片，可以是你喜欢的 RSS 源，也可以是一个你常用的网页。通过我们额外提供的编辑工具，你可以定制一切。
 
@@ -43,7 +43,7 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 
 * [TabHub Card Action](https://github.com/tabhub/tabhub-card-action) 一个只要你提供图片就可以生成图片类型资源的 GitHub Action
 
-* [TabHub Card Resource Editor](https://tabhub.io/editor/) 如果你想手动创建资源，可以用这个表格工具来生成资源清单。然后复制粘贴到 TabHub 的菜单里的自行添加的输入框里点`添加`即可
+* [TabHub Card Resource Editor](https://tabhub.github.io/editor/) 如果你想手动创建资源，可以用这个表格工具来生成资源清单。然后复制粘贴到 TabHub 的菜单里的自行添加的输入框里点`添加`即可
 
 
 ### 加入社区
