@@ -53,3 +53,9 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * 通过[创建新的 Issue](https://github.com/tabhub/community/issues)反馈问题
 * 或在 [TabHub Discussions](https://github.com/tabhub/community/discussions) 相应的板块发起讨论
 * 如果你新建了有趣的 TabHub Resource，也可以在 [TabHub Discussions](https://github.com/tabhub/community/discussions/categories/tabhub-resources) 上和大家分享
+
+### 支持一下
+
+<p align="center">
+  <img width="470" src="https://raw.githubusercontent.com/tabhub/tabhub.github.io/master/wechat_buy_me_a_coffee.jpeg" alt="buy me a coffe">
+</p>

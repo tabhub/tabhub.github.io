@@ -49,3 +49,9 @@ You are welcome to contribute:
 * Create an issue when you have any advice/problem [here](https://github.com/tabhub/community/issues)
 * Or create a new discussion in [TabHub Discussions](https://github.com/tabhub/community/discussions)
 * Create a new resource and share it in [TabHub Discussions](https://github.com/tabhub/community/discussions/categories/tabhub-resources)
+
+### Buy me a coffee
+
+<p align="center">
+  <img width="470" src="https://raw.githubusercontent.com/tabhub/tabhub.github.io/master/wechat_buy_me_a_coffee.jpeg" alt="buy me a coffe">
+</p>
