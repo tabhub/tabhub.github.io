@@ -41,6 +41,7 @@ They say "A picture is worth a thousand words" ;)
 * [TabHub Card Action](https://github.com/tabhub/tabhub-card-action) A GitHub Action for creating your own TabHub cards of image type
 
 * [TabHub Card Resource Editor](https://tabhub.github.io/editor/) Hope to create your own resource? Try the resource editor to create a TabHub card resource manifest manually
+* [TabHub RSSify](https://github.com/tabhub/rssify) A GitHub Action that generates an RSS feed out of websites that don't have one
 
 ### Contribution
 

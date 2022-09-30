@@ -44,6 +44,7 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * [TabHub Card Action](https://github.com/tabhub/tabhub-card-action) 一个只要你提供图片就可以生成图片类型资源的 GitHub Action
 
 * [TabHub Card Resource Editor](https://tabhub.github.io/editor/) 如果你想手动创建资源，可以用这个表格工具来生成资源清单。然后复制粘贴到 TabHub 的菜单里的自行添加的输入框里点`添加`即可
+* [TabHub RSSify](https://github.com/tabhub/rssify) 你可以使用这个 GitHub Action 为任何没有 RSS feed 的站点生成一个 RSS 文件
 
 
 ### 加入社区
