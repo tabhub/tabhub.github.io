@@ -16,6 +16,8 @@ TabHub 是一个 Chrome/Edge 浏览器的扩展应用。可以用它定制你在
 * TabHub v2.1
 * Chrome/Edge 94
 
+同时，TabHub 支持导入 OPML 来添加 RSS 资源。
+
 ### 使用指南
 
 一图胜千言 ;)

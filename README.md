@@ -14,6 +14,8 @@ Note: To read third party RSS in TabHub, please ensure the requirements:
 * TabHub v2.1
 * Chrome/Edge 94
 
+and TabHub supports importing OPML to add RSS resources.
+
 ### Getting Started Guide
 
 They say "A picture is worth a thousand words" ;)
